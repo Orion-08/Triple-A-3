@@ -1,6 +1,6 @@
 ### Icons used -
 ## User
-![User Icon](https://i.imgur.com/45BIKmP.png)
+![User Icon](https://github.com/RAOexe/Triple-A-3/blob/main/UI%20Elements/Icons/SVG/Username.svg)
 
 ## Email
 ![Email](https://i.imgur.com/M2OVasJ.png)
