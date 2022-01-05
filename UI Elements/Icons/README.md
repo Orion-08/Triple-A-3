@@ -1,5 +1,5 @@
 ### Icons used -
-## User ![User](https://imgur.com/gallery/45BIKmP) 
+## User ![User Icon](https://i.imgur.com/45BIKmP.png)
 ## Email ![Email](https://i.imgur.com/M2OVasJ.png)
 ## Password ![Password](https://i.imgur.com/M2OVasJ.png)
 ## Phone ![Phone](https://i.imgur.com/M2OVasJ.png)
