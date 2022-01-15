@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triple A</title>
+    <!-- <link rel="stylesheet" href="/Naveen/style.css" /> -->
+
+    <style>
+      * {
+        margin: 0rem;
+        padding: 0rem;
+        box-sizing: border-box;
+      }
+
+      main {
+        min-height: 100vh;
+        background: linear-gradient(to right, #44e3fdbf, #3d49e3);
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+
+      .Box1 {
+        margin: 2.07% 0.07%;
+        background: white;
+        min-height: 85vh;
+        /* height: 85vh; */
+        width: 39vw;
+        /* border:2px solid black; */
+        background: transparent
+          linear-gradient(136deg, #ffffff66 0%, #ffffff0d 100%) 0% 0% no-repeat
+          padding-box;
+        border-radius: 2rem;
+        border: 2px solid #ffffff99;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+      }
+
+      .Box2 {
+        margin: 15px 0px;
+        background: white;
+        min-height: 7.3vh;
+        width: 39vw;
+        /* border:2px solid black; */
+        background: transparent
+          linear-gradient(136deg, #ffffff66 0%, #ffffff0d 100%) 0% 0% no-repeat
+          padding-box;
+        border-radius: 2rem;
+        border: 2px solid #ffffff99;
+        opacity: 1;
+        /* -webkit-backdrop-filter: blur(40px); */
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+
+        font: var(--unnamed-font-style-normal) normal normal 32px/40px
+          var(--unnamed-font-family-source-sans-pro);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-ffffff);
+        text-align: center;
+        font: normal normal normal 32px/40px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
+
+      .circle1 {
+        position: absolute;
+        top: 6%;
+        right: 10%;
+        width: 25rem;
+        height: 25rem;
+        background: var(--unnamed-color-3d49e3) 0% 0% no-repeat padding-box;
+        background: #3d49e3 0% 0% no-repeat padding-box;
+        border-radius: 300px;
+        opacity: 1;
+        z-index: -1;
+      }
+
+      .circle3 {
+        position: absolute;
+        top: -28.1%;
+        left: 26.1%;
+        width: 17.42rem;
+        height: 17.42rem;
+        background: var(--unnamed-color-3d49e3) 0% 0% no-repeat padding-box;
+        background: #3d49e3 0% 0% no-repeat padding-box;
+        border-radius: 300px;
+        opacity: 1;
+        z-index: -1;
+      }
+      .circle4 {
+        position: absolute;
+        bottom: 18.37%;
+        /* top:47.04%; */
+        left: 13.05%;
+        width: 18.79rem;
+        height: 18.79rem;
+        background: var(--unnamed-color-3d49e3) 0% 0% no-repeat padding-box;
+        background: #44e3fd 0% 0% no-repeat padding-box;
+        border-radius: 300px;
+        opacity: 1;
+        z-index: -1;
+      }
+
+      .circle2 {
+        position: absolute;
+        bottom: 0%;
+        right: 28.1%;
+        /* 600px -> 25 rem */
+        width: 25rem;
+        height: 10rem;
+        background: var(--unnamed-color-3d49e3) 0% 0% no-repeat padding-box;
+        background: #6944fd 0% 0% no-repeat padding-box;
+        border-radius: 300px 300px 0px 0px;
+        opacity: 1;
+        z-index: -1;
+      }
+
+      #image {
+        position: absolute;
+        top: 2.08rem;
+        /* border:2px solid black; */
+        border-radius: 10.92rem;
+        height: 9.33rem;
+        width: 9.33rem;
+        z-index: 5;
+        border: 2px solid var(--unnamed-color-ffffff99);
+        background: transparent url("img/Glass Pic.png") 0% 0% no-repeat
+          padding-box;
+        box-shadow: -10px 10px 20px #0000001a;
+        border: 2px solid #ffffff99;
+        border-radius: 262px;
+        opacity: 1;
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+      }
+
+      #face_img {
+        border-radius: 10.92rem;
+        height: 9rem;
+        width: 9rem;
+      }
+
+      #nm-gen-age-dob {
+        position: absolute;
+        top: 7.42rem;
+        /* border:2px solid black; */
+        min-width: 21.33rem;
+        height: 10.66rem;
+        border-radius: 1.67rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* z-index:3; */
+        justify-content: space-between;
+        border: 2px solid var(--unnamed-color-ffffff99);
+        background: transparent
+          linear-gradient(116deg, #ffffff66 0%, #ffffff0d 100%) 0% 0% no-repeat
+          padding-box;
+        /* box-shadow: -10px 10px 26px #3d48e371;
+     */
+        box-shadow: -10px 10px 28px #2262d85b;
+        border: 2px solid #ffffff99;
+        border-radius: 2rem;
+        /* opacity: 0.6; */
+      }
+
+      #icons {
+        position: absolute;
+        top: 20.17rem;
+        /* border:2px solid black; */
+        height: 4rem;
+        width: 21.33rem;
+        border-radius: 1.25rem;
+        border: 2px solid var(--unnamed-color-ffffff99);
+        background: transparent
+          linear-gradient(101deg, #ffffff66 0%, #ffffff0d 100%) 0% 0% no-repeat
+          padding-box;
+        /* box-shadow: -10px 10px 20px #3d48e371; */
+        box-shadow: -10px 10px 28px #2262d85b;
+        border: 2px solid #ffffff99;
+        border-radius: 1.25rem;
+        opacity: 0.6;
+      }
+      li {
+        display: inline-block;
+        margin: 0px 8px;
+        width: 3rem;
+        height: 3rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* border: 2px solid black; */
+        border-radius: 12.5rem;
+      }
+      #content {
+        position: absolute;
+        /* border: 2px solid black; */
+        top: 25.25rem;
+        height: 4rem;
+        width: 21.33rem;
+        border-radius: 1.25rem;
+        border: 2px solid var(--unnamed-color-ffffff99);
+        background: transparent
+          linear-gradient(101deg, #ffffff66 0%, #ffffff0d 100%) 0% 0% no-repeat
+          padding-box;
+        /* box-shadow: -10px 10px 26px #3d48e371; */
+        box-shadow: -10px 10px 28px #2262d85b;
+        border: 2px solid #ffffff99;
+        text-align: center;
+        padding: 25px 0px;
+        font-weight: bold;
+        /* border: 2px sol */
+      }
+
+      #generator {
+        padding: 10px 0px;
+        position: absolute;
+        top: 30.92rem;
+        /* border: 2px solid black; */
+        height: 2.5833rem;
+        width: 15rem;
+        border-radius: 4.79rem;
+        font-size: 12px;
+        text-align: center;
+        font: var(--unnamed-font-style-normal) normal
+          var(--unnamed-font-weight-bold) var(--unnamed-font-size-33) /
+          var(--unnamed-line-spacing-41)
+          var(--unnamed-font-family-source-sans-pro);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-ffffff);
+        /* text-align: left; */
+        font: normal normal bold 20px/21px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+        background: var(--unnamed-color-3d49e3) 0% 0% no-repeat padding-box;
+        background: #3d49e3 0% 0% no-repeat padding-box;
+        box-shadow: -10px 10px 26px #23285e5c;
+        border: 2px solid #3d49e3;
+      }
+      #generator:hover {
+        cursor: pointer;
+      }
+      .info {
+        height: 1.94rem;
+        /* border: 2px solid black; */
+      }
+
+      #name {
+        width: 10.67rem;
+        position: absolute;
+        top: 5rem;
+        text-align: center;
+        padding: 2px 0px;
+        font-size: 12px;
+        margin: 1px;
+        border-radius: 4.79rem;
+        background: var(--unnamed-color-3d49e3) 0% 0% no-repeat padding-box;
+        background: #3d49e3 0% 0% no-repeat padding-box;
+        opacity: 1;
+      }
+      #para {
+        font: var(--unnamed-font-style-normal) normal normal 24px/31px
+          var(--unnamed-font-family-source-sans-pro);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-ffffff);
+        font: normal normal normal 20px/28px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
+      #gen-age-dob {
+        position: absolute;
+        width: 14.38rem;
+        bottom: 0.8333rem;
+        font: var(--unnamed-font-style-normal) normal normal 24px/31px
+          var(--unnamed-font-family-source-sans-pro);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-ffffff);
+        text-align: left;
+        font: normal normal normal 18px/27px Source Sans Pro;
+
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+      }
+      .spa {
+        margin: 0px 9px;
+      }
+      .logo_img {
+        /* width:3.5vw;
+        height:3.5vw; */
+        width: 56px;
+        height: 56px;
+        background: var(--unnamed-color-7dccff33) 0% 0% no-repeat padding-box;
+        border: 0.5px solid var(--unnamed-color-ffffff);
+        border-radius: 50%;
+        opacity: 1;
+      }
+      .logo_img:hover {
+        cursor: pointer;
+      }
+
+      .content-value {
+        display: none;
+      }
+
+      @media (min-width: 1600px) {
+        .logo_img {
+          width: 56px;
+          height: 56px;
+        }
+      }
+
+      @media (max-height: 1000) and (min-height: 736px) {
+        .Box1 {
+          min-height: 70vh;
+          width: 55vw;
+        }
+        .Box2 {
+          display: none;
+        }
+      }
+
+      @media (min-height: 1000px) {
+        .Box1 {
+          min-height: 55vh;
+          width: 55vw;
+        }
+        .Box2 {
+          display: none;
+        }
+      }
+
+      @media (max-width: 500px) and (min-height: 560px) {
+        .Box1 {
+          /* display: none; */
+          min-height: 87vh;
+          width: 98vw;
+        }
+        .Box2 {
+          display: none;
+        }
+        body,
+        html {
+          height: 100%;
+          width: 100%;
+        }
+        body {
+          background: linear-gradient(to right, #44e3fdbf, #3d49e3);
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+        }
+      }
+
+      @media (min-height: 1000px) and (min-width: 1000px) {
+        .Box1 {
+          min-height: 45vh;
+          width: 55vw;
+          position: absolute;
+          top: 12vh;
+          left: 23vw;
+        }
+      }
+
+      @media (min-height: 1360px) and (min-width: 1000px) {
+        .Box1 {
+          min-height: 45vh;
+        }
+        .Box2 {
+          display: none;
+        }
+      }
+
+      @media (min-height: 599px) and (min-width: 1023px) {
+        .Box1 {
+          min-height: 85vh;
+        }
+        .Box2 {
+          display: none;
+        }
+      }
+
+      @media (min-height: 799px) and (min-width: 1023px) {
+        .Box1 {
+          min-height: 50vh !important;
+        }
+      }
+
+      @media (min-height: 799px) and (min-width: 1270px) {
+        .Box1 {
+          min-height: 75vh !important;
+        }
+      }
+
+      /* #img1{
+        filter: drop-shadow(2px 2px 5px rgb(2, 96, 173));
+    } */
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="glass">
+        <!-- main div -->
+        <div id="Container-A" class="Box1">
+          <!-- IMAGE -->
+          <div class="item" id="image">
+            <img id="face_img" src="{{img}}" alt="img" />
+          </div>
+
+          <!-- NAME AGE DOB GENDER -->
+          <div class="item" id="nm-gen-age-dob">
+            <!-- name -->
+
+            <div class="info" id="name">
+              <!-- name -->
+              <p id="para">{{name}}</p>
+            </div>
+            <!-- age gender dob -->
+            <div class="info" id="gen-age-dob">
+              <span class="spa">{{gender}}</span>
+              <span class="spa">{{age}}</span>
+              <span class="spa">{{date}}</span>
+            </div>
+          </div>
+
+          <!-- icons -->
+          <div class="item" id="icons">
+            <ul class="logos">
+              <li id="logo-1">
+                <img
+                  class="logo_img"
+                  id="img1"
+                  onclick="show_hide_usnm()"
+                  src="../static/Username.png"
+                  alt=""
+                />
+              </li>
+              <li id="logo-2">
+                <img
+                  class="logo_img"
+                  id="img2"
+                  onclick="show_hide_email()"
+                  src="../static/Email.png"
+                  alt=""
+                />
+              </li>
+              <li id="logo-3">
+                <img
+                  class="logo_img"
+                  id="img3"
+                  onclick="show_hide_pass()"
+                  src="../static/pass.png"
+                  alt=""
+                />
+              </li>
+              <li id="logo-4">
+                <img
+                  class="logo_img"
+                  id="img4"
+                  onclick="show_hide_phone()"
+                  src="../static/phone.png"
+                  alt=""
+                />
+              </li>
+              <li id="logo-5">
+                <img
+                  class="logo_img"
+                  id="img5"
+                  onclick="show_hide_loc()"
+                  src="../static/location.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+
+          <!-- content -->
+          <div class="item" id="content">
+            <!-- content -->
+            <p class="content-value" id="username">{{username}}</p>
+            <p class="content-value" id="email">{{email}}</p>
+            <p class="content-value" id="pass">{{password}}</p>
+            <p class="content-value" id="phone">{{phone}}</p>
+            <p class="content-value" id="loc">{{city}}, {{state}}</p>
+          </div>
+
+          <!-- GENERATOR -->
+          <button
+            class="item"
+            id="generator"
+            onClick="window.location.href=window.location.href"
+          >
+            GENERATE
+          </button>
+        </div>
+        <!-- collaberation -->
+        <!-- <div id="container-B" class="Box2">Good Morning</div> -->
+      </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <script src="../static/script.js"></script>
+  </body>
+</html>
